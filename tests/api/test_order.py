@@ -2079,8 +2079,6 @@ def test_order_query_with_filter_status(
 
     orders_ids_from_response = [o["node"]["id"] for o in orders]
     assert len(orders) == count
-    assert len(orders) == 3
-    assert count == 3 
     assert order_id in orders_ids_from_response
 
 
